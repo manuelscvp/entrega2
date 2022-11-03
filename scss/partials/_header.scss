@@ -1,0 +1,37 @@
+header {
+    
+        grid-area: header;
+        background-color: white;
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            li {
+                display: flex;
+            
+            
+                list-style: none;
+                margin-right: 20px;
+                &:hover {
+                    background-color: rgb(236, 240, 242);
+
+                    a {
+    
+                        list-style: none;
+                        color: rgba(254, 249, 249, 0.74);
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    
+                    
+                    
+                    
+                    
+                    }
+                
+                
+                
+                }
+            }
+        }
+    }
+            

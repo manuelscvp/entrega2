@@ -4,158 +4,133 @@
 
 body {
   background-color: rgba(228, 242, 242, 0);
-}
-
-h1 {
-  color: rgb(12, 0, 0);
-  text-transform: uppercase;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-img {
-  width: 100%;
-}
-
-header {
-  grid-area: header;
-  background-color: white;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-}
-
-header ul li {
-  display: flex;
-  list-style: none;
-  margin-right: 20px;
-}
-
-header ul li:hover {
-  background-color: rgb(236, 240, 242);
-}
-
-header ul li a {
-  list-style: none;
-  color: rgba(254, 249, 249, 0.74);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   max-width: 800px;
   margin: 0 auto;
   position: relative;
 }
-
-main {
+body header {
+  grid-area: header;
+  background-color: white;
+}
+body header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+body header ul li {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+body header ul li:hover {
+  background-color: rgb(236, 240, 242);
+}
+body header ul li:hover a {
+  list-style: none;
+  color: rgba(254, 249, 249, 0.74);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+body main {
   grid-area: main;
   min-height: 100vh;
 }
-
-main iframe {
+body main iframe {
   margin: 0 auto;
   display: block;
 }
-
-footer {
-  grid-area: footer;
-  background-color: rgb(251, 242, 242);
-  text-align: center;
-  padding: 10px 0;
-  color: rgb(21, 19, 19);
+body main h1 {
+  color: rgb(12, 0, 0);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.entrenador {
+body main img {
+  width: 100%;
+}
+body main .entrenador {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.entrenador h3 {
+body main .entrenador h3 {
   font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.entrenador img {
+body main .entrenador img {
   width: 100%;
 }
-
-form {
+body main form {
   display: flex;
   flex-direction: column;
 }
-
-form input {
+body main form input {
   margin-bottom: 20px;
 }
-
-form textarea {
+body main form textarea {
   margin-bottom: 20px;
 }
-
-section article {
+body main section article {
   margin-bottom: 30px;
 }
-
-.button {
+body main .button {
   border: 1px solid black;
   padding: 5px;
   text-decoration: none;
   color: black;
 }
-
-.precio {
+body main .precio {
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.titulo-entrenadores {
+body main .titulo-entrenadores {
   text-align: center;
   margin-bottom: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.escuelaDeSurf {
+body main .escuelaDeSurf {
   display: flex;
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(2, 11, 8);
 }
-
-h2 {
+body main h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.playita {
+body main .playita {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 50px;
   margin-left: auto;
   display: flex;
   justify-content: center;
-  font-size: 100px;
-}
-
-.seccionPlayita article img {
-  display: flex;
+  font-size: xx-large;
   width: 100%;
 }
-
-.imagen1 {
+body main .seccionPlayita article img {
   display: flex;
-  padding: 20px;
-  flex-direction: row;
 }
-
+body main .imagen1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+}
+body main .imagen1 img {
+  width: calc(50% - 5px);
+}
 @media (min-width: 800px) {
-  .entrenador {
+  body main .entrenador {
     flex-wrap: nowrap;
   }
+}
+body footer {
+  grid-area: footer;
+  background-color: rgb(251, 242, 242);
+  text-align: center;
+  padding: 10px 0;
+  color: rgb(21, 19, 19);
 }
 
 /*# sourceMappingURL=style.css.map */
