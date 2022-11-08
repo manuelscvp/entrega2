@@ -12,24 +12,26 @@ body {
 }
 body header {
   grid-area: header;
-  background-color: white;
+  grid-template-rows: max-content;
 }
 body header ul {
   list-style: none;
   display: flex;
-  margin: 0;
 }
 body header ul li {
   display: flex;
   list-style: none;
   margin-right: 20px;
 }
+body header ul li a.nav-link {
+  color: rgba(0, 0, 0, 0.55);
+}
 body header ul li:hover {
-  background-color: rgb(236, 240, 242);
+  background-color: rgb(245, 250, 253);
 }
 body header ul li:hover a {
   list-style: none;
-  color: rgba(254, 249, 249, 0.74);
+  color: rgb(250, 243, 243);
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -127,10 +129,23 @@ body main .imagen1 img {
 }
 body footer {
   grid-area: footer;
-  background-color: rgb(251, 242, 242);
+  background-color: rgba(251, 242, 242, 0.097);
   text-align: center;
   padding: 10px 0;
-  color: rgb(21, 19, 19);
+}
+
+/*
+rgba(0, 0, 0, 0.55) color del texto
+
+#def0ff bgheader
+rgb(241, 228, 228) bgfooter
+*/
+.bg-header {
+  background-color: #def0ff;
+}
+
+.bg-footer {
+  background-color: rgb(241, 228, 228);
 }
 
 /*# sourceMappingURL=style.css.map */

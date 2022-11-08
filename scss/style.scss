@@ -2,6 +2,8 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+$colorTexto: rgba(0, 0, 0, 0.55);
+
 body {
     background-color: rgba(228, 242, 242, 0);
     display: grid;
@@ -18,10 +20,23 @@ body {
     @import "./partials/main";
     @import "./partials/footer";
 
-
    
-   
-    
 }
+/*
+rgba(0, 0, 0, 0.55) color del texto
 
+#def0ff bgheader
+rgb(241, 228, 228) bgfooter
+*/
+
+$bgColors: (
+    header: #def0ff,
+    footer: rgb(241, 228, 228),
+);
+
+@each $key, $value in $bgColors {
+    .bg-#{$key}{
+        background-color: $value;
+    }    
+}
 
